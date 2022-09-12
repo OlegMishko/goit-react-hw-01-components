@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
+import { StyleProfile } from './Profile.styled.jsx'
 
+export const Profile = ({ user: { username, tag, location, avatar, stats } }) => {
 
-export const Profile = ({ user }) => {
-    const { username, tag, location, avatar, stats } = user;
     return (
-        <div className="profile">
+        <StyleProfile>
             <div className="description">
                 <img
                     src={avatar}
-                    alt={username}
+                    alt="avatar"
                     className="avatar"
                 />
                 <p className="name">{username}</p>
@@ -30,7 +30,7 @@ export const Profile = ({ user }) => {
                     <span className="quantity">{stats.likes}</span>
                 </li>
             </ul>
-        </div>
+        </StyleProfile>
     )
 };
 

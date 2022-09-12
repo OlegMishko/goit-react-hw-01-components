@@ -1,20 +1,21 @@
 import PropTypes from 'prop-types';
+import { SectionStatistics, StatList } from './Statistics.styled.jsx'
 
 export const Statistics = ({ data }) => {
     return (
-        <section className="statistics">
+        <SectionStatistics>
             <h2 className="title">Upload stats</h2>
 
-            <ul className="stat-list">
+            <StatList >
                 {data.map(({ id, label, percentage }) => (
                     <li className="item" key={id}>
 
-                        <span className="label" >.{label}</span>
+                        <span className="label">{label}</span>
                         <span className="percentage">{percentage}%</span>
                     </li>))
                 }
-            </ul>
-        </section >)
+            </StatList>
+        </SectionStatistics >)
 };
 
 

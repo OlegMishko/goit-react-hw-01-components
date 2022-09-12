@@ -9,9 +9,11 @@ import { Profile } from "./Profile/Profile";
 import { Statistics } from './Statistics/Statistics';
 import { TransactionHistory } from "./TransactionsHistory/TransactionHistory";
  
+import { MainPage } from 'common/MainPage.styled';
+
 export const App = () => {
   return (
-    <div>
+    <MainPage>
       <>
       <h2>Task 1 - User profile</h2>
       <Profile user={user} />
@@ -36,7 +38,7 @@ export const App = () => {
 
 
 
-  </div>
+  </MainPage>
   )
 };
 // console.log(transactions);
