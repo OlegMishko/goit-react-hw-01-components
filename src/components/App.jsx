@@ -13,24 +13,17 @@ import { MainPage } from 'common/MainPage.styled';
 export const App = () => {
   return (
     <MainPage>
-      <>
-        <h2>Task 1 - User profile</h2>
-        <Profile user={user} />
-      </>
+      <h2>Task 1 - User profile</h2>
+      <Profile user={user} />
 
-      <>
-        <h2>Task 2 - Statistics</h2>
-        <Statistics data={data} />
-      </>
+      <h2>Task 2 - Statistics</h2>
+      <Statistics data={data} />
 
-      <>
-        <h2>Task 3 - FriendList</h2>
-        <FriendList friends={friends} />
-      </>
-      <>
-        <h2>Task 4 - TransactionHistory</h2>
-        <TransactionHistory transactions={transactions} />
-      </>
+      <h2>Task 3 - FriendList</h2>
+      <FriendList friends={friends} />
+
+      <h2>Task 4 - TransactionHistory</h2>
+      <TransactionHistory transactions={transactions} />
     </MainPage>
   );
 };
